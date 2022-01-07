@@ -1,0 +1,29 @@
+
+50 :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+------site$ git init
+(venv)site$ touch requeriments.txt
+(venv)site$ touch all.txt
+(venv)site$ touch .gitignore
+(venv)site$ pip install django .
+(venv)site$ django-admin startproject django_project .
+(venv)site$ mkdir Aplications
+(venv)site/Aplications$ django-admin startapp Manager
+XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+
+(venv)site$ 
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
+(venv)site$
