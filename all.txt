@@ -10,7 +10,40 @@
 (venv)site/Aplications$ django-admin startapp Manager
 XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+49 :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//Configure settings
+|--> (venv)site/django_project$
+//Add the app
+    'Aplications.Manager'
+//Add psql database
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'djfirstsite',
+        'USER': 'postgres',
+        'PASSWORD': 'SEXYpsql!88',
+        'HOST': '127.0.0.1',
+        'DATABASE_PORT': '5432',
+    }
+}
+//Select settings
+LANGUAGE_CODE = 'es-mx'
+TIME_ZONE = 'America/Mexico_City'
+|--> END
 
+//CREATE DATABASE
+(venv)site$ sudo -u postgres psql
+(venv)site$ #CREATE DATABASE djfirstsite
+(venv)site$ \q
+
+XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+|--> 
+    
+|--> END
 
 
 
