@@ -2,3 +2,4 @@ Python 3.8.10
 pip 20.0.2 from /django-first-site/venv/lib/python3.8/site-packages/pip (python 3.8)
 django 4.0.2
 psql (PostgreSQL) 12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)
+psycopg2 Successfully installed psycopg2-2.9.3
