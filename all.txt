@@ -33,13 +33,47 @@ TIME_ZONE = 'America/Mexico_City'
 
 //CREATE DATABASE
 (venv)site$ sudo -u postgres psql
-(venv)site$ #CREATE DATABASE djfirstsite
+(venv)site$ #CREATE DATABASE djfirstsite ***ERROR(1)***
 (venv)site$ #\q
-
-(venv)site$ pip install psycopg2
-
-
 XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+48 :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//Lib need for psql database
+(venv)site$ pip install psycopg2
+XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+47 :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+|--> (venv)site/django_project/Aplications/Manager/models.py$
+//Add the first example model 
+class Example(models.Model):
+    code = models.PositiveSmallIntegerField(primary_key=True)
+    name = models.CharField(max_length=10)
+
+    def __str__(self):
+        return "{0}".format(self.name)
+|--> END
+|--> (venv)site/django_project/Aplications/Manager/apps.py$
+//Change rute of aplication
+    name = 'Aplications.Manager'
+|--> END
+
+//Make again database, but now with ';' ***SOLVE:ERROR(1)***
+CREATE DATABASE djfirstsite;
+!!!DON'T FORGET ;
+//Check if we create database
+sudo -u postgres psql djfirstsite
+
+--> NOTES:
+\l
+//list all
+\dt
+//show the tables create(here, we found the models)
+NOTES <--|
+ 
+(venv)site$ python3 manage.py makemigrations
+(venv)site$ python3 manage.py migrate
+XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 
 
 
