@@ -74,6 +74,23 @@ NOTES <--|
 (venv)site$ python3 manage.py migrate
 XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+46 :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+(venv)site$ python3 manage.py createsuperuser
+{
+    admin
+    esgaelramos@gmail.com
+    admin
+    admin
+}
+(venv)site$ python3 manage.py runserver
+//Check: / and /admin
+|--> (venv)site/django_project/Aplications/Manager/admin.py$
+//Import and register the model
+from Aplications.Manager.models import *
+admin.site.register(Example)
+|--> END
+
+XD :) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 
